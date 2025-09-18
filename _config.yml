@@ -1,0 +1,56 @@
+# GitHub Pages Configuration for Cowboy Quick Shot
+
+# Site settings
+title: "Cowboy Quick Shot - Fastest Draw in the West"
+description: "Test your reflexes in the ultimate Western gunfighter duel. Hold your phone upside down and draw as fast as lightning!"
+url: "https://yourusername.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# GitHub Pages settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Include files
+include:
+  - _pages
+
+# SEO settings
+author: "Avinash Kumar"
+twitter:
+  username: # Add your Twitter username
+  card: summary_large_image
+
+# Social media
+social:
+  name: "Cowboy Quick Shot"
+  links:
+    - # Add your social media links
+
+# Logo and favicon
+logo: "/images/revolver.png"
+favicon: "/images/revolver.png"
+
+# Theme settings
+theme: minima
+
+# Custom variables
+game:
+  name: "Cowboy Quick Shot"
+  tagline: "Fastest Draw in the West"
+  app_store_url: "#" # Add your App Store URL when available
+  version: "1.0.0"
+  ios_version: "18.2+"
