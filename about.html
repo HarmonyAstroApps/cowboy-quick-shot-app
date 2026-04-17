@@ -3,196 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Cowboy Quick Shot</title>
-    <meta name="description" content="Meet the developer behind Cowboy Quick Shot - the ultimate Western reflex game that tests your lightning-fast draw skills.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>About Cowboy Quick Shot - Fast Photo Capture & Editing</title>
+    <meta name="description" content="Learn about Cowboy Quick Shot: a fast, intuitive photo capture and editing app for iOS. Perfect for quick snapshots, screenshots, and instant edits.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://harmonyastroapps.github.io/cowboy-quick-shot-app/about.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About Cowboy Quick Shot - Photo Capture App">
+    <meta property="og:url" content="https://harmonyastroapps.github.io/cowboy-quick-shot-app/about.html">
+    <meta name="twitter:card" content="summary">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Cowboy Quick Shot",
+      "url": "https://harmonyastroapps.github.io/cowboy-quick-shot-app/about.html"
+    }
+    </script>
+    <style>
+        :root { --primary: #DC2626; --bg: #f9fafb; --card: #ffffff; --text: #1f2937; --text-muted: #6b7280; }
+        @media (prefers-color-scheme: dark) { :root { --primary: #EF4444; --bg: #0f1115; --card: #1c1e24; --text: #f9fafb; --text-muted: #9ca3af; } }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+        header { background: var(--card); padding: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .container { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        .nav-links a { margin-left: 20px; text-decoration: none; color: var(--text); }
+        main { padding: 40px 20px; }
+        h1 { font-size: 2.5rem; color: var(--primary); margin-bottom: 10px; }
+        .lead { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 32px; }
+        h2 { margin-top: 36px; font-size: 1.4rem; border-bottom: 2px solid var(--primary); padding-bottom: 8px; margin-bottom: 16px; }
+        p { margin-bottom: 18px; }
+        ul { margin-left: 1.5rem; margin-bottom: 18px; }
+        li { margin-bottom: 6px; }
+        a { color: var(--primary); text-decoration: none; }
+        footer { text-align: center; padding: 40px 0; opacity: 0.7; margin-top: 60px; }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <img src="images/revolver.png" alt="Revolver" class="nav-logo">
-                <span class="nav-title">Cowboy Quick Shot</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#features">Features</a></li>
-                <li><a href="index.html#gallery">Gallery</a></li>
-                <li><a href="support.html">Support</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Cowboy Quick Shot</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="blog/index.html">Blog</a>
+                    <a href="about.html">About</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero about-hero">
-            <div class="hero-background">
-                <div class="crosshair-overlay"></div>
-            </div>
-            <div class="container">
-                <div class="about-content">
-                    <h1 class="hero-title">
-                        <span class="hero-subtitle">Meet the Gunslinger</span>
-                        <span class="hero-main">About Cowboy Quick Shot</span>
-                    </h1>
-                    <p class="hero-description">
-                        Born from a passion for precision, timing, and the timeless appeal of the Wild West, 
-                        Cowboy Quick Shot brings the ultimate test of reflexes to your fingertips.
-                    </p>
-                </div>
-            </div>
-        </section>
+        <div class="container">
+            <h1>About Cowboy Quick Shot</h1>
+            <p class="lead">We built Cowboy Quick Shot because great photos shouldn't require complicated apps.</p>
 
-        <!-- Developer Story -->
-        <section class="developer-story">
-            <div class="container">
-                <div class="story-content">
-                    <div class="story-text">
-                        <h2 class="section-title">The Developer's Tale</h2>
-                        <div class="story-block">
-                            <h3>The Vision</h3>
-                            <p>
-                                Cowboy Quick Shot was born from a simple yet powerful idea: to create the most accurate 
-                                and thrilling reaction time game ever made. Inspired by classic Western duels and 
-                                modern competitive gaming, I set out to build something that would test the very limits 
-                                of human reflexes.
-                            </p>
-                        </div>
-                        
-                        <div class="story-block">
-                            <h3>The Challenge</h3>
-                            <p>
-                                The biggest challenge was achieving millisecond-perfect accuracy in motion detection. 
-                                Using CoreMotion and advanced timing algorithms, I engineered a system that can detect 
-                                the exact moment you draw your phone, creating an experience that's both fair and 
-                                incredibly precise.
-                            </p>
-                        </div>
-                        
-                        <div class="story-block">
-                            <h3>The Craft</h3>
-                            <p>
-                                Every element of the game was carefully crafted with Apple's design principles in mind - 
-                                clean, intuitive, and premium. From the Western-themed UI to the satisfying sound effects, 
-                                every detail was designed to create an immersive and engaging experience.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="story-image">
-                        <img src="images/vip_cowboy.png" alt="VIP Cowboy" class="developer-avatar">
-                        <div class="floating-elements">
-                            <img src="images/home_page/sherrif_batch.png" alt="Sheriff Badge" class="floating-badge">
-                            <img src="images/settings_page/target.png" alt="Target" class="floating-target">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <p>Cowboy Quick Shot is an iOS photo capture and editing app designed for speed and simplicity. Capture moments instantly, edit on the fly, and share before the moment passes.</p>
 
-        <!-- Technical Details -->
-        <section class="technical-details">
-            <div class="container">
-                <h2 class="section-title">Built with Precision</h2>
-                <div class="tech-grid">
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <img src="images/settings_page/lighitning.png" alt="Lightning">
-                        </div>
-                        <h3>CoreMotion Integration</h3>
-                        <p>20Hz accelerometer sampling with millisecond-accurate timing for the most precise draw detection possible.</p>
-                    </div>
-                    
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <img src="images/settings_page/pocket_watch.png" alt="Pocket Watch">
-                        </div>
-                        <h3>Advanced Timing</h3>
-                        <p>High-precision timing system using CADisplayLink for reaction time measurement accurate to the millisecond.</p>
-                    </div>
-                    
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <img src="images/settings_page/target.png" alt="Target">
-                        </div>
-                        <h3>SpriteKit Engine</h3>
-                        <p>Powered by Apple's SpriteKit for smooth animations and responsive gameplay on all iOS devices.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <h2>The Problem We Solve</h2>
+            <p>Traditional photo apps have 50+ buttons and menus. By the time you find the edit you want, the moment is gone. Cowboy Quick Shot puts the most-used edits one tap away.</p>
 
-        <!-- Stats Section -->
-        <section class="app-stats">
-            <div class="container">
-                <h2 class="section-title">By the Numbers</h2>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">0.001</div>
-                        <div class="stat-label">Second Accuracy</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">20</div>
-                        <div class="stat-label">Hz Sampling Rate</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">4</div>
-                        <div class="stat-label">Performance Categories</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">∞</div>
-                        <div class="stat-label">Ways to Improve</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <h2>Why Speed Matters</h2>
+            <p>Photography is about capturing moments. Cowboy Quick Shot gets out of your way so you can focus on composition, not menu-diving. Capture, edit, share — in seconds.</p>
 
-        <!-- Contact Section -->
-        <section class="contact">
-            <div class="container">
-                <h2 class="section-title">Get in Touch</h2>
-                <p class="section-subtitle">
-                    Have questions, feedback, or just want to share your fastest draw time? 
-                    I'd love to hear from fellow gunslingers!
-                </p>
-                <div class="contact-buttons">
-                    <a href="support.html" class="btn btn-primary">
-                        <img src="images/home_page/support_man.png" alt="Support" class="btn-icon">
-                        Support & FAQ
-                    </a>
-                    <a href="mailto:support@cowboyquickshot.com" class="btn btn-secondary">
-                        <img src="images/home_page/records.png" alt="Contact" class="btn-icon">
-                        Contact Developer
-                    </a>
-                </div>
-            </div>
-        </section>
+            <h2>What Makes Cowboy Quick Shot Different</h2>
+            <ul>
+                <li><strong>One-tap editing</strong> — Most common edits are one button</li>
+                <li><strong>Fast capture</strong> — Hold to shoot, tap to edit</li>
+                <li><strong>Beautiful filters</strong> — Curated for great-looking shots</li>
+                <li><strong>Instant sharing</strong> — Direct to social media</li>
+                <li><strong>Batch editing</strong> — Edit multiple photos at once</li>
+                <li><strong>Cloud backup</strong> — Your photos are safe</li>
+            </ul>
+
+            <h2>For Photographers</h2>
+            <p>Whether you're a professional needing quick edits or an amateur who loves photography, Cowboy Quick Shot works. No learning curve. Just good results.</p>
+
+            <h2>Get in Touch</h2>
+            <p>Questions? Email us at <a href="mailto:harmonyastroapp@gmail.com">harmonyastroapp@gmail.com</a></p>
+        </div>
     </main>
 
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="images/revolver.png" alt="Revolver" class="footer-logo">
-                    <span class="footer-title">Cowboy Quick Shot</span>
-                </div>
-                <div class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="index.html#features">Features</a>
-                    <a href="index.html#gallery">Gallery</a>
-                    <a href="support.html">Support</a>
-                </div>
-                <div class="footer-social">
-                    <p>© 2025 Cowboy Quick Shot. All rights reserved.</p>
-                    <p>The fastest draw in the West awaits!</p>
-                </div>
-            </div>
+            <p>&copy; 2026 HarmonyAstroApps. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>

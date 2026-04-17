@@ -1,0 +1,7 @@
+# robots.txt for Cowboy Quick Shot
+# All search engines and AI crawlers are welcome
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://harmonyastroapps.github.io/cowboy-quick-shot-app/sitemap.xml
