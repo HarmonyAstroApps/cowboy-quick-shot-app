@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cowboy Quick Shot FAQ - Photo Editing Questions Answered</title>
-    <meta name="description" content="Frequently asked questions about Cowboy Quick Shot. Learn about photo editing, filters, sharing, and more.">
+    <title>Cowboy Quick Shot FAQ - Reflex Game Questions Answered</title>
+    <meta name="description" content="Answers to common questions about Cowboy Quick Shot: how the motion detection works, what counts as a good reaction time, how to play with friends, and whether it works offline.">
+    <meta name="keywords" content="cowboy quick shot faq, reflex game questions, reaction time app, motion game ios, western duel app, gunfighter reflex game">
+    <meta name="author" content="HarmonyAstroApps">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://harmonyastroapps.github.io/cowboy-quick-shot-app/faq.html">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Cowboy Quick Shot">
     <meta property="og:title" content="Cowboy Quick Shot FAQ">
     <meta property="og:url" content="https://harmonyastroapps.github.io/cowboy-quick-shot-app/faq.html">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://harmonyastroapps.github.io/cowboy-quick-shot-app/images/home_page/man.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://harmonyastroapps.github.io/cowboy-quick-shot-app/" },
+        { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://harmonyastroapps.github.io/cowboy-quick-shot-app/faq.html" }
+      ]
+    }
+    </script>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -18,66 +34,84 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How fast is Cowboy Quick Shot compared to other apps?",
+          "name": "How does Cowboy Quick Shot work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Built for speed. Capture, edit, and share in seconds. Average edit time is 3-5 seconds vs 30+ seconds with traditional apps."
+            "text": "Hold your iPhone pointed downward at your side, like a gun in a holster. When the app signals draw, flip your phone up as fast as you can. Motion sensors detect the movement and measure your reaction time in milliseconds."
           }
         },
         {
           "@type": "Question",
-          "name": "Can I batch edit photos?",
+          "name": "What is a good reaction time in Cowboy Quick Shot?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Apply the same edits to multiple photos instantly. Perfect for maintaining consistency across photo series."
+            "text": "Average human reaction time to a visual signal is roughly 250 ms. Most regular players in Cowboy Quick Shot score 220–350 ms. Fast players hit 180–200 ms on a good run. Below 150 ms usually indicates anticipating the signal — which counts as a false start."
           }
         },
         {
           "@type": "Question",
-          "name": "What filters does Cowboy Quick Shot have?",
+          "name": "Can I play with friends?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "30+ curated filters designed for natural-looking results. No overprocessed look. Each filter is built for versatility across different photo types."
+            "text": "Yes. Duel mode lets two players face each other with separate phones. You can also compare best times asynchronously with friends and track personal bests."
           }
         },
         {
           "@type": "Question",
-          "name": "Can I share directly to social media?",
+          "name": "Does the game work offline?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. One-tap sharing to Instagram, Twitter, Facebook, and more. Optimizes dimensions automatically for each platform."
+            "text": "Yes. Solo play, duels on the same device, and score tracking work fully offline. An internet connection is only needed for optional online leaderboards."
           }
         },
         {
           "@type": "Question",
-          "name": "Are my photos backed up?",
+          "name": "What iOS version do I need?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Cloud backup is automatic. Your photos are safe across all your devices."
+            "text": "iOS 15 or later, on any iPhone with Core Motion support (iPhone 6s and newer)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does it say I false-started?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you start moving the phone before the draw signal fires, the round is marked a false start. This prevents anticipating the signal from skewing your time. Wait for the signal, then move — your real reflex will still be impressive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will flipping my phone break it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The motion is a normal arm rotation, similar to how you'd naturally raise your phone. We recommend using a case and a secure grip, as with any motion-controlled game."
           }
         }
-      ]
+    ]
     }
     </script>
+
     <style>
-        :root { --primary: #DC2626; --bg: #f9fafb; --card: #ffffff; --text: #1f2937; --text-muted: #6b7280; }
-        @media (prefers-color-scheme: dark) { :root { --primary: #EF4444; --bg: #0f1115; --card: #1c1e24; --text: #f9fafb; --text-muted: #9ca3af; } }
+        :root { --primary: #b45309; --accent: #dc2626; --bg: #faf7f2; --card: #ffffff; --text: #1f2937; --text-muted: #6b7280; --border: rgba(0,0,0,0.08); }
+        @media (prefers-color-scheme: dark) { :root { --primary: #fbbf24; --accent: #ef4444; --bg: #1a1410; --card: #241c14; --text: #f9fafb; --text-muted: #9ca3af; --border: rgba(255,255,255,0.08); } }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
-        header { background: var(--card); padding: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
-        .container { max-width: 760px; margin: 0 auto; padding: 0 20px; }
-        nav { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; }
-        .nav-links a { margin-left: 20px; text-decoration: none; color: var(--text); }
+        header { background: var(--card); padding: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.06); border-bottom: 1px solid var(--border); }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+        nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+        .logo { font-family: 'Rye', serif; font-size: 1.4rem; color: var(--primary); text-decoration: none; }
+        .nav-links a { margin-left: 18px; text-decoration: none; color: var(--text); font-weight: 500; font-size: 0.95rem; }
         main { padding: 40px 20px; }
-        h1 { font-size: 2.5rem; color: var(--primary); margin-bottom: 10px; }
-        .lead { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 32px; }
-        h2 { margin-top: 36px; font-size: 1.3rem; margin-bottom: 20px; }
-        .faq-item { background: var(--card); border-radius: 8px; padding: 20px; margin-bottom: 16px; border-left: 4px solid var(--primary); }
-        .faq-q { font-weight: 700; margin-bottom: 8px; }
+        .back-link { display: inline-block; margin-bottom: 16px; color: var(--primary); text-decoration: none; font-weight: 500; }
+        h1 { font-family: 'Rye', serif; font-size: 2.4rem; color: var(--primary); margin-bottom: 10px; }
+        .lead { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 28px; }
+        h2 { margin-top: 30px; font-size: 1.2rem; margin-bottom: 16px; color: var(--text); }
+        .faq-item { background: var(--card); border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid var(--primary); box-shadow: 0 2px 6px rgba(0,0,0,0.03); }
+        .faq-q { font-weight: 700; margin-bottom: 8px; font-size: 1.02rem; }
         .faq-a { color: var(--text-muted); }
         a { color: var(--primary); }
-        footer { text-align: center; padding: 40px 0; opacity: 0.7; margin-top: 60px; }
+        footer { text-align: center; padding: 36px 20px; opacity: 0.75; font-size: 0.9rem; margin-top: 40px; border-top: 1px solid var(--border); }
     </style>
 </head>
 <body>
@@ -97,37 +131,56 @@
 
     <main>
         <div class="container">
+            <a href="index.html" class="back-link">&larr; Back to Home</a>
             <h1>Cowboy Quick Shot FAQ</h1>
-            <p class="lead">Common questions about photo editing and Cowboy Quick Shot.</p>
+            <p class="lead">How the quickdraw works, what counts as fast, and everything players actually ask us.</p>
+
+            <h2>Gameplay</h2>
 
             <div class="faq-item">
-                <div class="faq-q">How fast is Cowboy Quick Shot?</div>
-                <div class="faq-a">Built for speed. Average edit time is 3-5 seconds vs 30+ seconds with traditional apps.</div>
+                <div class="faq-q">How does Cowboy Quick Shot work?</div>
+                <div class="faq-a">Hold your iPhone pointed down at your side like a gun in a holster. When the app signals "draw," flip your phone upward. Motion sensors measure the time from signal to movement, in milliseconds.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-q">Can I batch edit photos?</div>
-                <div class="faq-a">Yes. Apply the same edits to multiple photos instantly. Perfect for consistency.</div>
+                <div class="faq-q">What is a good reaction time?</div>
+                <div class="faq-a">Average human visual reaction time is around 250 ms. Regular players score 220–350 ms. Fast players hit 180–200 ms. Below 150 ms usually means you anticipated the signal (counts as a false start).</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-q">How many filters?</div>
-                <div class="faq-a">30+ curated filters for natural-looking results. Built for versatility across photo types.</div>
+                <div class="faq-q">Why does it say I false-started?</div>
+                <div class="faq-a">If you move before the draw signal fires, the round is counted as a false start. This is what keeps reaction times honest — you can't game it by anticipating.</div>
+            </div>
+
+            <h2>Multiplayer</h2>
+
+            <div class="faq-item">
+                <div class="faq-q">Can I play with friends?</div>
+                <div class="faq-a">Yes — duel mode for two phones face-to-face, and asynchronous best-time comparison.</div>
+            </div>
+
+            <h2>Technical</h2>
+
+            <div class="faq-item">
+                <div class="faq-q">Does it work offline?</div>
+                <div class="faq-a">Yes. Solo play, duels on the same device, and score history all work offline. You only need an internet connection for optional online leaderboards.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-q">Direct social media sharing?</div>
-                <div class="faq-a">Yes. One-tap sharing to Instagram, Twitter, Facebook. Optimized dimensions for each platform.</div>
+                <div class="faq-q">What iOS version do I need?</div>
+                <div class="faq-a">iOS 15 or later, on any iPhone with Core Motion (iPhone 6s and newer).</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-q">Are photos backed up?</div>
-                <div class="faq-a">Yes. Automatic cloud backup. Your photos are safe across all devices.</div>
+                <div class="faq-q">Will flipping my phone break it?</div>
+                <div class="faq-a">No. The motion is a normal arm rotation. Use a case and a secure grip, as with any motion-controlled game.</div>
             </div>
+
+            <h2>Support</h2>
 
             <div class="faq-item">
                 <div class="faq-q">How do I contact support?</div>
-                <div class="faq-a">Email <a href="mailto:harmonyastroapp@gmail.com">harmonyastroapp@gmail.com</a></div>
+                <div class="faq-a">Email <a href="mailto:harmonyastroapp@gmail.com">harmonyastroapp@gmail.com</a>.</div>
             </div>
         </div>
     </main>

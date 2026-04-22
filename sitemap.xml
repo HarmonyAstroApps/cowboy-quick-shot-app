@@ -1,45 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/0.9">
   <url>
     <loc>https://harmonyastroapps.github.io/cowboy-quick-shot-app/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://harmonyastroapps.github.io/cowboy-quick-shot-app/images/home_page/man.png</image:loc>
+      <image:title>Cowboy Quick Shot - Western reflex game for iOS</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://harmonyastroapps.github.io/cowboy-quick-shot-app/about.html</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://harmonyastroapps.github.io/cowboy-quick-shot-app/faq.html</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://harmonyastroapps.github.io/cowboy-quick-shot-app/blog/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://harmonyastroapps.github.io/cowboy-quick-shot-app/blog/screenshot-editing-tips.html</loc>
-    <lastmod>2026-04-17</lastmod>
+    <loc>https://harmonyastroapps.github.io/cowboy-quick-shot-app/blog/what-is-a-good-reaction-time.html</loc>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://harmonyastroapps.github.io/cowboy-quick-shot-app/blog/fast-photo-editing.html</loc>
-    <lastmod>2026-04-17</lastmod>
+    <loc>https://harmonyastroapps.github.io/cowboy-quick-shot-app/blog/how-to-improve-your-reflexes.html</loc>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://harmonyastroapps.github.io/cowboy-quick-shot-app/blog/screenshot-vs-photos.html</loc>
-    <lastmod>2026-04-17</lastmod>
+    <loc>https://harmonyastroapps.github.io/cowboy-quick-shot-app/blog/why-motion-beats-tapping.html</loc>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://harmonyastroapps.github.io/cowboy-quick-shot-app/gallery.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://harmonyastroapps.github.io/cowboy-quick-shot-app/support.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://harmonyastroapps.github.io/cowboy-quick-shot-app/privacy.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

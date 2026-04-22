@@ -3,42 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cowboy Quick Shot Blog - Photography & Editing Tips</title>
-    <meta name="description" content="Photography editing tips, screenshot guides, and quick-shot techniques for mobile photographers.">
+    <title>Cowboy Quick Shot Blog - Reaction Time, Reflex Training &amp; Western Duels</title>
+    <meta name="description" content="Guides on reaction time science, how to train your reflexes, and the mechanics behind motion-based quickdraw games on iOS.">
+    <meta name="keywords" content="reaction time blog, reflex training, quickdraw game, motion sensors iphone, reflex science, western duel game blog">
+    <meta name="author" content="HarmonyAstroApps">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://harmonyastroapps.github.io/cowboy-quick-shot-app/blog/">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Cowboy Quick Shot">
     <meta property="og:title" content="Cowboy Quick Shot Blog">
     <meta property="og:url" content="https://harmonyastroapps.github.io/cowboy-quick-shot-app/blog/">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://harmonyastroapps.github.io/cowboy-quick-shot-app/images/home_page/man.png">
+    <meta name="twitter:card" content="summary_large_image">
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Blog",
       "name": "Cowboy Quick Shot Blog",
-      "url": "https://harmonyastroapps.github.io/cowboy-quick-shot-app/blog/"
+      "url": "https://harmonyastroapps.github.io/cowboy-quick-shot-app/blog/",
+      "description": "Reaction time science, reflex training tips, and the mechanics behind motion-based games on iOS.",
+      "publisher": { "@type": "Organization", "name": "HarmonyAstroApps", "url": "https://harmonyastroapps.github.io/" }
     }
     </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://harmonyastroapps.github.io/cowboy-quick-shot-app/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://harmonyastroapps.github.io/cowboy-quick-shot-app/blog/" }
+      ]
+    }
+    </script>
+
     <style>
-        :root { --primary: #DC2626; --bg: #f9fafb; --card: #ffffff; --text: #1f2937; --text-muted: #6b7280; }
-        @media (prefers-color-scheme: dark) { :root { --primary: #EF4444; --bg: #0f1115; --card: #1c1e24; --text: #f9fafb; --text-muted: #9ca3af; } }
+        :root { --primary: #b45309; --bg: #faf7f2; --card: #ffffff; --text: #1f2937; --text-muted: #6b7280; --border: rgba(0,0,0,0.08); }
+        @media (prefers-color-scheme: dark) { :root { --primary: #fbbf24; --bg: #1a1410; --card: #241c14; --text: #f9fafb; --text-muted: #9ca3af; --border: rgba(255,255,255,0.08); } }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
-        header { background: var(--card); padding: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
-        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
-        nav { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; }
-        .nav-links a { margin-left: 20px; text-decoration: none; color: var(--text); }
+        header { background: var(--card); padding: 20px 0; border-bottom: 1px solid var(--border); }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+        nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+        .logo { font-family: 'Rye', serif; font-size: 1.4rem; color: var(--primary); text-decoration: none; }
+        .nav-links a { margin-left: 18px; text-decoration: none; color: var(--text); font-weight: 500; font-size: 0.95rem; }
         main { padding: 40px 20px; }
-        h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        .subtitle { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 40px; }
-        .post-list { display: grid; gap: 20px; }
-        .post-card { background: var(--card); padding: 28px; border-radius: 12px; border-left: 4px solid var(--primary); text-decoration: none; color: inherit; transition: transform 0.2s; }
-        .post-card:hover { transform: translateY(-2px); }
-        .post-meta { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 8px; }
-        .post-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 10px; }
-        .post-excerpt { color: var(--text-muted); }
-        footer { text-align: center; padding: 40px 0; opacity: 0.7; margin-top: 60px; }
+        h1 { font-family: 'Rye', serif; font-size: 2.4rem; color: var(--primary); margin-bottom: 10px; }
+        .lead { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 32px; }
+        .post { background: var(--card); border-radius: 12px; padding: 24px; margin-bottom: 16px; border-left: 4px solid var(--primary); box-shadow: 0 2px 6px rgba(0,0,0,0.04); }
+        .post h2 { font-size: 1.2rem; margin-bottom: 8px; }
+        .post h2 a { color: var(--primary); text-decoration: none; }
+        .post p { color: var(--text-muted); margin-bottom: 10px; }
+        .post-meta { font-size: 0.85rem; color: var(--text-muted); }
+        footer { text-align: center; padding: 36px 20px; opacity: 0.75; font-size: 0.9rem; margin-top: 40px; border-top: 1px solid var(--border); }
     </style>
 </head>
 <body>
@@ -59,27 +77,25 @@
     <main>
         <div class="container">
             <h1>Cowboy Quick Shot Blog</h1>
-            <p class="subtitle">Photography tips and editing techniques.</p>
+            <p class="lead">Reaction-time science, reflex training, and why motion controls beat tap-based reflex tests.</p>
 
-            <div class="post-list">
-                <a href="screenshot-editing-tips.html" class="post-card">
-                    <div class="post-meta">Guide &middot; 4 min read</div>
-                    <h2 class="post-title">Screenshot Editing Tips: Make Screenshots Look Professional</h2>
-                    <p class="post-excerpt">Learn how to make screenshots look polished and professional. Blur sensitive info, add annotations, perfect lighting.</p>
-                </a>
+            <article class="post">
+                <h2><a href="what-is-a-good-reaction-time.html">What is a good reaction time? (And how fast is "fast"?)</a></h2>
+                <p>Average human reaction time is about 250 ms. Here's how that breaks down — perception, decision, movement — and what separates a good player from a great one.</p>
+                <div class="post-meta">Published April 22, 2026 &middot; 6 min read</div>
+            </article>
 
-                <a href="fast-photo-editing.html" class="post-card">
-                    <div class="post-meta">Guide &middot; 4 min read</div>
-                    <h2 class="post-title">Fast Photo Editing on iPhone: Get Results in Seconds</h2>
-                    <p class="post-excerpt">Pro editing tips that work on mobile. Learn the essential edits that make biggest difference with minimal time.</p>
-                </a>
+            <article class="post">
+                <h2><a href="how-to-improve-your-reflexes.html">How to actually improve your reflexes (backed by sport science)</a></h2>
+                <p>Most "train your reflexes" advice is wishful thinking. Here's what the science says actually works — short-interval reactive training, sleep, caffeine, and why motion-based practice beats tap-based apps.</p>
+                <div class="post-meta">Published April 22, 2026 &middot; 7 min read</div>
+            </article>
 
-                <a href="screenshot-vs-photos.html" class="post-card">
-                    <div class="post-meta">Comparison &middot; 3 min read</div>
-                    <h2 class="post-title">Screenshots vs Photos: When to Use Each and How to Edit Them</h2>
-                    <p class="post-excerpt">Different content types need different edits. We break down the best approach for screenshots vs regular photos.</p>
-                </a>
-            </div>
+            <article class="post">
+                <h2><a href="why-motion-beats-tapping.html">Why motion-based reflex games are more accurate than tap games</a></h2>
+                <p>Most reflex apps measure how fast you tap a button. That's half of reaction time. Motion-controlled games like Cowboy Quick Shot measure the full perception-decision-movement loop.</p>
+                <div class="post-meta">Published April 22, 2026 &middot; 5 min read</div>
+            </article>
         </div>
     </main>
 

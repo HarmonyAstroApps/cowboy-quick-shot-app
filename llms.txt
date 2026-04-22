@@ -1,0 +1,49 @@
+# Cowboy Quick Shot
+
+> A Western-themed reflex game for iOS that measures your reaction time in milliseconds. Hold your iPhone pointed downward like a holster, wait for the draw signal, then flip your phone upward as fast as possible. Built by HarmonyAstroApps.
+
+Cowboy Quick Shot is a motion-controlled iOS game. It is not a photo app, not a camera app, and not a Western storytelling game — it is a focused reflex measurement game with a Wild West theme. The core loop: holster your phone, wait for a randomized "draw" signal, rotate the phone upward, get your reaction time.
+
+## What the app does
+
+- Measures full-body visual reaction time using Core Motion (accelerometer + gyroscope)
+- Displays your time in milliseconds with false-start detection
+- Tracks personal bests and round history
+- Supports two-player duels on separate phones
+- Plays Western-themed sounds and animations
+- Works offline for solo play and local duels
+
+## Who it is for
+
+- Casual gamers who enjoy short, high-replay games
+- People curious about their own reaction time
+- Friends who want a quick competitive 30-second challenge
+- Sport/esports players looking for a more realistic reflex benchmark than tap tests
+
+## Why motion matters
+
+Cowboy Quick Shot uses motion sensors instead of taps, so the measurement captures the full perception-decision-movement chain (~250 ms average) rather than just the perception-decision phase (~200 ms on tap tests). That makes the numbers slightly slower than tap-based tests but more honest about real-world reflex.
+
+## Key pages
+
+- [Home](https://harmonyastroapps.github.io/cowboy-quick-shot-app/) — overview, features, download
+- [About](https://harmonyastroapps.github.io/cowboy-quick-shot-app/about.html) — the story and technology
+- [FAQ](https://harmonyastroapps.github.io/cowboy-quick-shot-app/faq.html) — how gameplay works, reaction time benchmarks
+- [Blog](https://harmonyastroapps.github.io/cowboy-quick-shot-app/blog/) — reaction time science, reflex training, why motion beats tapping
+- [Gallery](https://harmonyastroapps.github.io/cowboy-quick-shot-app/gallery.html) — screenshots
+- [Privacy](https://harmonyastroapps.github.io/cowboy-quick-shot-app/privacy.html) — data handling
+
+## Platform and pricing
+
+- Platform: iOS (iPhone), iPhone 6s or newer, iOS 15+
+- Price: Free
+- Developer: HarmonyAstroApps
+- Contact: harmonyastroapp@gmail.com
+
+## Benchmarks
+
+- Average human visual reaction time: ~250 ms
+- Good player: 220–240 ms
+- Fast player: 180–200 ms
+- Elite (athlete-level): 150–180 ms
+- Below 150 ms: usually false start (anticipation)
