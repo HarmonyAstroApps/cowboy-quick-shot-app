@@ -3,130 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Cowboy Quick Shot</title>
-    <meta name="description" content="Privacy Policy for Cowboy Quick Shot - We respect your privacy and don't collect any personal data.">
+    <title>Privacy Policy — Cowboy Quick Shot</title>
+    <meta name="description" content="Cowboy Quick Shot privacy policy. We don't collect personal data. Motion data stays on your device.">
+    <link rel="canonical" href="https://harmonyastroapps.github.io/cowboy-quick-shot-app/privacy.html">
+    <meta property="og:type" content="article">
+    <meta name="theme-color" content="#0e0a07">
+    <meta name="color-scheme" content="dark">
+
+    <link rel="icon" type="image/png" href="images/revolver.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <img src="images/revolver.png" alt="Revolver" class="nav-logo">
-                <span class="nav-title">Cowboy Quick Shot</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#features">Features</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="about.html">About</a></li>
+<body class="page-sub">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <filter id="paper-grain">
+            <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+            <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.5 0"/>
+        </filter>
+    </svg>
+    <div class="grain-overlay" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="header-sentinel" aria-hidden="true"></div>
+
+    <header class="site-header" id="siteHeader">
+        <nav class="nav" aria-label="Primary">
+            <a href="index.html" class="brand">
+                <img src="images/revolver.png" alt="" class="brand-logo">
+                <span class="brand-name">Cowboy Quick&nbsp;Shot</span>
+            </a>
+            <ul class="nav-menu" role="list">
+                <li><a href="index.html#draw" class="nav-link">The Draw</a></li>
+                <li><a href="index.html#modes" class="nav-link">Modes</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
             </ul>
+            <a href="index.html#download" class="nav-cta" data-magnetic><span class="btn-label">Get the App</span></a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
     </header>
 
-    <main class="page-content">
-        <div class="container">
-            <section class="content-section">
-                <h1>Privacy Policy</h1>
-                <p class="last-updated">Last Updated: July 4, 2025</p>
+    <div class="drawer-scrim" aria-hidden="true"></div>
+    <nav id="drawer" class="drawer" aria-label="Mobile menu">
+        <a href="index.html">Home</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="index.html#download" class="drawer-cta">Get the App</a>
+    </nav>
 
-                <div class="privacy-content">
-                    <h2>Overview</h2>
-                    <p>Cowboy Quick Shot ("we," "our," or "us") is committed to protecting your privacy. This privacy policy explains how we collect, use, and protect information when you use our mobile application.</p>
+    <main>
+        <section class="sub-hero">
+            <div class="container">
+                <a href="index.html" class="back-link">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+                    Back to the trail
+                </a>
+                <p class="section-eyebrow"><span class="eyebrow-dot"></span>Privacy</p>
+                <h1 class="sub-title">
+                    What we collect: <em class="italic-accent">nothing.</em>
+                </h1>
+                <p class="sub-lede">Last updated June 2025. The whole policy on one page.</p>
+            </div>
+        </section>
 
-                    <h2>Information We Collect</h2>
-                    <p>We do <strong>not</strong> collect, store, or transmit any personal information, including:</p>
-                    <ul>
-                        <li>Names or contact information</li>
-                        <li>Email addresses</li>
-                        <li>Phone numbers</li>
-                        <li>Location data</li>
-                        <li>Device identifiers</li>
-                        <li>Network information</li>
-                    </ul>
+        <section class="faq-page">
+            <div class="container prose">
+                <h2>The short version</h2>
+                <p>
+                    Cowboy Quick Shot doesn't collect personal information. Motion data, game scores,
+                    and your settings stay on your device. We don't have servers, we don't have analytics,
+                    we don't sell anything.
+                </p>
 
-                    <h2>Local Data Only</h2>
-                    <p>All game data is stored locally on your device:</p>
-                    <ul>
-                        <li>Your best reaction times and performance statistics</li>
-                        <li>Game settings and preferences</li>
-                        <li>Achievement progress</li>
-                    </ul>
-                    <p>This data never leaves your device and is not shared with us or any third parties.</p>
+                <h2>What we don't collect</h2>
+                <ul>
+                    <li>Names, email addresses, or contact information</li>
+                    <li>Location data</li>
+                    <li>Device identifiers</li>
+                    <li>Camera or microphone access (we never request these)</li>
+                    <li>Browsing or app usage history</li>
+                    <li>Motion data outside the app session</li>
+                </ul>
 
-                    <h2>Motion Detection</h2>
-                    <p>The app uses CoreMotion to detect when you flip your phone during gameplay. This motion data:</p>
-                    <ul>
-                        <li>Is processed entirely on your device</li>
-                        <li>Is never recorded or stored</li>
-                        <li>Is never transmitted to our servers</li>
-                        <li>Is used solely for game mechanics</li>
-                    </ul>
+                <h2>What stays on your device</h2>
+                <ul>
+                    <li>Your reaction time scores and personal bests</li>
+                    <li>Game settings and preferences</li>
+                    <li>Tournament history (pass-and-play mode)</li>
+                </ul>
+                <p>This data is stored in standard iOS app storage and is removed if you delete the app.</p>
 
-                    <h2>Multiplayer Features</h2>
-                    <p>When using wireless multiplayer features:</p>
-                    <ul>
-                        <li>Connection is peer-to-peer between devices</li>
-                        <li>No data is sent to our servers</li>
-                        <li>Only game state information is shared between connected devices</li>
-                        <li>No personal information is exchanged</li>
-                    </ul>
+                <h2>Third parties</h2>
+                <p>We don't integrate any third-party analytics, ad networks, social SDKs, or tracking tools. The only "third party" involved is Apple, which handles App Store transactions and crash reports per Apple's own privacy policies.</p>
 
-                    <h2>No Third-Party Tracking</h2>
-                    <p>We do not use:</p>
-                    <ul>
-                        <li>Analytics services</li>
-                        <li>Advertising networks</li>
-                        <li>Social media integrations</li>
-                        <li>Third-party tracking tools</li>
-                    </ul>
+                <h2>Children</h2>
+                <p>The app is safe for all ages. Since we don't collect data from anyone, there's nothing to specifically protect for children under 13 — it's already not collected.</p>
 
-                    <h2>No Internet Connection Required</h2>
-                    <p>The app functions completely offline and does not require an internet connection to play.</p>
+                <h2>Changes</h2>
+                <p>If we ever change this policy, we'll post the new version here with an updated date. If we ever start collecting any data (we don't plan to), we'll require explicit opt-in.</p>
 
-                    <h2>Data Security</h2>
-                    <p>Since no personal data is collected or transmitted, there is no risk of your personal information being compromised through our app.</p>
-
-                    <h2>Children's Privacy</h2>
-                    <p>Our app is safe for users of all ages. We do not knowingly collect personal information from children under 13, as we do not collect personal information from any users.</p>
-
-                    <h2>Changes to This Policy</h2>
-                    <p>We may update this privacy policy from time to time. Any changes will be posted within the app and on our website.</p>
-
-                    <h2>Contact Us</h2>
-                    <p>If you have questions about this privacy policy, please contact:</p>
-                    <p><strong>support@cowboyquickshot.com</strong></p>
-
-                    <div class="privacy-footer">
-                        <p><strong>By using Cowboy Quick Shot, you agree to this privacy policy.</strong></p>
-                    </div>
-                </div>
-            </section>
-        </div>
+                <h2>Questions?</h2>
+                <p>Email <a href="mailto:harmonyastroapp@gmail.com">harmonyastroapp@gmail.com</a>.</p>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="images/revolver.png" alt="Revolver" class="footer-logo">
-                    <span class="footer-title">Cowboy Quick Shot</span>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="images/revolver.png" alt="" class="footer-logo">
+                <span class="footer-title">Cowboy Quick Shot</span>
+                <p class="footer-tag">Quickest finger in the West wins.</p>
+            </div>
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <p class="footer-h">Product</p>
+                    <ul>
+                        <li><a href="index.html#draw">The Draw</a></li>
+                        <li><a href="index.html#modes">Modes</a></li>
+                    </ul>
                 </div>
-                <div class="footer-links">
-                    <a href="index.html#features">Features</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="support.html">Support</a>
-                    <a href="about.html">About</a>
-                    <a href="privacy.html">Privacy</a>
+                <div class="footer-col">
+                    <p class="footer-h">Studio</p>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="mailto:harmonyastroapp@gmail.com">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="footer-social">
-                    <p>© 2025 Cowboy Quick Shot. All rights reserved.</p>
-                    <p>The fastest draw in the West awaits!</p>
+                <div class="footer-col">
+                    <p class="footer-h">Legal</p>
+                    <ul>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
                 </div>
             </div>
+        </div>
+        <div class="container footer-base">
+            <p>© <span id="year">2026</span> HarmonyAstroApps</p>
         </div>
     </footer>
 
