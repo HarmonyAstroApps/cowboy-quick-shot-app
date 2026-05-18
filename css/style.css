@@ -1556,3 +1556,146 @@ ul { list-style: none; }
     border-top: 1px solid var(--border-hair);
     margin: var(--space-xl) 0;
 }
+
+/* ============================================================
+   PROMO STRIP — top of page
+   ============================================================ */
+.promo-strip {
+    position: relative;
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.55rem 1.25rem;
+    text-decoration: none;
+    color: var(--bg-night, #0e0a07);
+    background:
+        linear-gradient(90deg, rgba(255, 215, 130, 0) 0%, rgba(255, 215, 130, 0.5) 50%, rgba(255, 215, 130, 0) 100%),
+        linear-gradient(90deg, var(--accent-brass) 0%, #e6c474 50%, var(--accent-brass) 100%);
+    background-size: 200% 100%, 100% 100%;
+    background-position: 0% 0%, 0 0;
+    font-family: var(--ff-sans, 'Inter', sans-serif);
+    font-size: 0.875rem;
+    letter-spacing: 0.005em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    transition: filter 220ms ease, transform 220ms ease;
+    animation: promoShimmer 9s ease-in-out infinite;
+}
+.promo-strip:hover { filter: brightness(1.07); }
+.promo-strip:active { transform: translateY(1px); }
+.promo-strip strong {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #1a0f05;
+}
+.promo-strip em {
+    font-style: normal;
+    font-weight: 600;
+    color: #1a0f05;
+    border-bottom: 1px dashed rgba(26, 15, 5, 0.45);
+}
+.promo-strip__pulse {
+    position: relative;
+    flex: 0 0 auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #1a0f05;
+    box-shadow: 0 0 0 0 rgba(26, 15, 5, 0.7);
+    animation: promoPulse 2.4s ease-out infinite;
+}
+.promo-strip__text {
+    display: inline-flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+    line-height: 1.35;
+}
+.promo-strip__sep {
+    color: rgba(26, 15, 5, 0.55);
+    padding: 0 0.15rem;
+}
+.promo-strip__detail { color: rgba(26, 15, 5, 0.88); }
+.promo-strip__cta {
+    flex: 0 0 auto;
+    font-family: var(--ff-mono, 'JetBrains Mono', monospace);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #1a0f05;
+    padding: 0.25rem 0.65rem;
+    border: 1px solid rgba(26, 15, 5, 0.55);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    transition: background 220ms ease, transform 220ms ease;
+}
+.promo-strip:hover .promo-strip__cta {
+    background: rgba(26, 15, 5, 0.85);
+    color: var(--accent-brass);
+    transform: translateX(2px);
+}
+
+@keyframes promoShimmer {
+    0%, 100% { background-position: 0% 0%, 0 0; }
+    50%      { background-position: 200% 0%, 0 0; }
+}
+@keyframes promoPulse {
+    0%   { box-shadow: 0 0 0 0   rgba(26, 15, 5, 0.6); }
+    70%  { box-shadow: 0 0 0 10px rgba(26, 15, 5, 0); }
+    100% { box-shadow: 0 0 0 0   rgba(26, 15, 5, 0); }
+}
+
+/* On scroll the promo strip stays at the document top but the sticky
+   header overlays it — that's the intended hierarchy: the promo only
+   shows above the fold, then the header takes over. */
+
+@media (max-width: 768px) {
+    .promo-strip {
+        font-size: 0.78rem;
+        padding: 0.5rem 0.85rem;
+        gap: 0.55rem;
+    }
+    .promo-strip__sep,
+    .promo-strip__detail {
+        display: none;
+    }
+    .promo-strip__cta {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.55rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .promo-strip,
+    .promo-strip__pulse {
+        animation: none;
+    }
+}
+
+/* Sub-hero in-text link colour for the lede link */
+.lede-link {
+    color: var(--accent-brass);
+    border-bottom: 1px dashed var(--accent-brass);
+    text-decoration: none;
+}
+.lede-link:hover { color: var(--accent-gold); border-color: var(--accent-gold); }
+
+/* Footer "all our apps" link */
+.footer-base a {
+    color: var(--accent-brass);
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(200, 155, 74, 0.4);
+    transition: color 220ms ease, border-color 220ms ease;
+}
+.footer-base a:hover {
+    color: var(--accent-gold, #e6c474);
+    border-color: var(--accent-gold, #e6c474);
+}
